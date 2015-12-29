@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mtcent.funnymeet.ui.activity.discovery.DiscussTopicDetailActivity">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" android:showAsAction="never" />
+</menu>
+<!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/menu/menu_discuss_topic_detail.xml -->

@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" 
+    android:orientation="vertical">
+
+    <include layout="@layout/somain_title" />
+
+    <WebView
+        android:id="@+id/htmlWeb"
+       
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/activity_html.xml -->

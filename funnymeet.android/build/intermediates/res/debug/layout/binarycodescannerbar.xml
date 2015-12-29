@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dip"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/scan_scaner"
+        android:layout_width="0dip"
+        android:layout_height="80dip"
+        android:layout_weight="1"
+        android:background="#80000000"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/scanner_icon"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/scan_qr" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="扫码"
+            android:textColor="#ff808080"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scan_post"
+        android:layout_width="0dip"
+        android:layout_height="80dip"
+        android:layout_weight="1"
+        android:background="#80000000"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/scan_post_icon"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/scan_book" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="海报"
+            android:textColor="#ff808080"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scan_sight"
+        android:layout_width="0dip"
+        android:layout_height="80dip"
+        android:layout_weight="1"
+        android:background="#80000000"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/scan_sight_icon"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/scan_street" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="街景"
+            android:textColor="#ff808080"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/binarycodescannerbar.xml -->

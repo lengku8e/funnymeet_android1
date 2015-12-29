@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/my_club_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:background="#fff8f9fa"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:text="俱乐部管理"
+        android:textColor="#ff808080"
+        android:textSize="14sp" />
+
+</LinearLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/my_clubs_parent_layout.xml -->

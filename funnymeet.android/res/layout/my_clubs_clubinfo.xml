@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff8f9fa"
+    android:orientation="vertical" >
+
+    <include layout="@layout/somain_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:paddingTop="15dip" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#ffffffff"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dip"
+                        android:orientation="vertical" >
+
+                        <com.mtcent.funnymeet.ui.view.control.CustomImageView
+                            android:id="@+id/club_detail_clubicon"
+                            android:layout_width="50dip"
+                            android:layout_height="50dip"
+                            app:src="@drawable/defaultface"
+                            app:type="circle" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/club_detail_clubname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="活动·研发组"
+                            android:textColor="#ff000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dip"
+                            android:text="10000"
+                            android:textColor="#ff000000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip"
+                    android:layout_marginLeft="85dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/dotted_line"
+                    android:layerType="software" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="85dip"
+                    android:background="@drawable/finditemstyle"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="15dip"
+                        android:layout_height="15dip"
+                        android:layout_marginRight="5dip"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/eze" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_weight="1"
+                        android:text="IT/互联网"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/gotoright" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#ffcccccc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="60dip"
+                        android:layout_weight="3"
+                        android:background="@drawable/finditemstyle"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="25dip"
+                            android:layout_height="25dip"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/club_announcements" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dip"
+                            android:text="公告"
+                            android:textColor="#ff808080"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="40dip"
+                        android:background="#ffcccccc" />
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="60dip"
+                        android:layout_weight="4"
+                        android:background="@drawable/finditemstyle"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="25dip"
+                            android:layout_height="25dip"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/club_hd" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dip"
+                            android:text="俱乐部活动"
+                            android:textColor="#ff808080"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1px"
+                        android:layout_height="40dip"
+                        android:background="#ffcccccc" />
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="60dip"
+                        android:layout_weight="3"
+                        android:background="@drawable/finditemstyle"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="25dip"
+                            android:layout_height="25dip"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/club_album" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dip"
+                            android:text="相册"
+                            android:textColor="#ff808080"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:background="#ffffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/finditemstyle"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_weight="1"
+                        android:text="我的俱乐部名片"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="10dip"
+                        android:text="LiuDev"
+                        android:textColor="#ff808080"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/gotoright" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#ffcccccc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/finditemstyle"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dip"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginTop="10dip"
+                            android:layout_weight="1"
+                            android:text="俱乐部成员"
+                            android:textColor="#ff000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dip"
+                            android:layout_marginRight="10dip"
+                            android:layout_marginTop="10dip"
+                            android:text="8人"
+                            android:textColor="#ff808080"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dip"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="15dip" >
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:orientation="vertical" >
+
+                            <com.mtcent.funnymeet.ui.view.control.CustomImageView
+                                android:id="@+id/club_member_headicon_one"
+                                android:layout_width="40dip"
+                                android:layout_height="40dip"
+                                app:src="@drawable/defaultface"
+                                app:type="circle" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:orientation="vertical" >
+
+                            <com.mtcent.funnymeet.ui.view.control.CustomImageView
+                                android:id="@+id/club_member_headicon_two"
+                                android:layout_width="40dip"
+                                android:layout_height="40dip"
+                                app:src="@drawable/defaultface"
+                                app:type="circle" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:orientation="vertical" >
+
+                            <com.mtcent.funnymeet.ui.view.control.CustomImageView
+                                android:id="@+id/club_member_headicon_three"
+                                android:layout_width="40dip"
+                                android:layout_height="40dip"
+                                app:src="@drawable/defaultface"
+                                app:type="circle" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:orientation="vertical" >
+
+                            <com.mtcent.funnymeet.ui.view.control.CustomImageView
+                                android:id="@+id/club_member_headicon_four"
+                                android:layout_width="40dip"
+                                android:layout_height="40dip"
+                                app:src="@drawable/defaultface"
+                                app:type="circle" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="40dip"
+                                android:layout_height="40dip"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ier" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#ffcccccc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/finditemstyle"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_weight="1"
+                        android:text="管理俱乐部"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/gotoright" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="10dip"
+                android:text="修改俱乐部资料,设置群管理员"
+                android:textColor="#ff808080"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:background="#ffffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/finditemstyle"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_weight="1"
+                        android:text="分享俱乐部"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/gotoright" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#ffcccccc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/finditemstyle"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_weight="1"
+                        android:text="俱乐部活动历史"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/gotoright" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#ffcccccc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/finditemstyle"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_weight="1"
+                        android:text="俱乐部消息设置"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="10dip"
+                        android:text="接收消息并提醒"
+                        android:textColor="#ff808080"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/gotoright" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="10dip"
+                android:text="你会收到本俱乐部的新活动提醒"
+                android:textColor="#ff808080"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="200dip"
+        android:orientation="vertical">
+
+        <!--<com.mtcent.funnymeet.ui.view.control.AutoGridView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:horizontalSpacing="2dip"-->
+        <!--android:numColumns="3">-->
+
+        <!--</com.mtcent.funnymeet.ui.view.control.AutoGridView>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这里会有一堆堆的子版块出现的"
+            android:textColor="#ff333333"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/new_find_child_topic_layout.xml -->

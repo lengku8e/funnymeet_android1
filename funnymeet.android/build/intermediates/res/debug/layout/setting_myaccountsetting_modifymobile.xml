@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff" >
+
+    <include
+        android:id="@+id/setting_modifymobile_title"
+        layout="@layout/somain_title" />
+
+    <LinearLayout
+        android:id="@+id/setting_modifymobile_bottomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/setting_modifymobile_upload"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/green_btn_style"
+            android:gravity="center"
+            android:text="上传通讯录"
+            android:textColor="#ffffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/setting_modifymobile_change"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gray_btn_style"
+            android:gravity="center"
+            android:text="更换手机号"
+            android:textColor="#ff000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/setting_modifymobile_currnetmobile"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/setting_modifymobile_bottomButton"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/my_game_cell"
+        android:gravity="center"
+        android:text="绑定的手机号"
+        android:textColor="#ff808080"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/setting_modifymobile_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/setting_modifymobile_currnetmobile"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="如果你当前的手机号不再使用了 ，请及时来这里更换手机号。"
+        android:textColor="#ff808080"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_above="@id/setting_modifymobile_hint"
+        android:layout_below="@id/setting_modifymobile_title"
+        android:layout_centerHorizontal="true"
+        android:scaleType="center"
+        android:src="@drawable/mobile_binded_icon" />
+
+</RelativeLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/setting_myaccountsetting_modifymobile.xml -->

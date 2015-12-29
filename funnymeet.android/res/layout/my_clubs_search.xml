@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" ><!--垂直显示-->
+<!--线性布局的一种容器-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffebeced"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+<!--元素垂直方向居中对齐center_vertical-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/search_bar_style"
+            android:gravity="center"
+            android:layerType="software"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="14dip"
+                android:layout_height="14dip"
+                android:layout_marginRight="5dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/actionbar_search_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="#ffa6a6a6"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

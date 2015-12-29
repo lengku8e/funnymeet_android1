@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="left"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dip"
+        android:layout_marginRight="0dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/firstLetter"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#ebebeb"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="A"
+            android:textColor="#8a8a8a"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hdlist_pressedstyle"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="0dip"
+            android:paddingTop="0dip" >
+
+            <com.mtcent.funnymeet.ui.view.control.XVURLImageView
+                android:id="@+id/clubImage"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip" >
+
+                <TextView
+                    android:id="@+id/clubName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="俱乐部名称"
+                    android:textColor="#ff000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/phone_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="手机好友：好友"
+                    android:textColor="#ff8a8a8a"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:gravity="end" >
+
+                <TextView
+                    android:id="@+id/addbutton"
+                    android:layout_width="54dp"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/green_btn_style"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:scaleType="fitCenter"
+                    android:text="加入"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/added"
+                    android:layout_width="54dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:scaleType="fitCenter"
+                    android:text="已加入"
+                    android:textColor="#8a8a8a"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/addressBookItemDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="1dip"
+            android:background="#ffdddddd"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

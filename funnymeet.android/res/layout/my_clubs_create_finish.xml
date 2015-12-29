@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffefeff4"
+    android:orientation="vertical" >
+
+    <include layout="@layout/somain_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:background="#ffffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/defaultface" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测试俱乐部"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="10000"
+                android:textColor="#ff808080"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:background="#ffffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/finditemstyle"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"
+                android:text="分享俱乐部"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/gotoright" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ffaaaaaa" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/finditemstyle"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"
+                android:text="邀请会员"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/gotoright" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/my_clubs_create_finish"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/green_btn_style"
+        android:gravity="center"
+        android:text="完善资料"
+        android:textColor="#ffffffff"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="bottom" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:gravity="center"
+            android:text="2个月后俱乐部成员少于3人,俱乐部将会被系统回收"
+            android:textColor="#ff808080"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

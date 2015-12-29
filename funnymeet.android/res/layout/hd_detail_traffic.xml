@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/trafficGuideframe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dip"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffdee2e3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="10dip"
+        android:text="交通指南"
+        android:textColor="#ff808080"
+        android:textSize="18sp" />
+
+
+
+    <TextView
+        android:id="@+id/hdtraffic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="1.5"
+        android:paddingBottom="10dip"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dip"
+        android:text="　作为一款为全球年轻消费者打造的欧洲知名啤酒品牌，乐堡啤酒一直积极赞助全球性的音乐文化活动，包括世界上规模最大的露天音乐节英国格拉斯顿伯里音乐节(Glastonbury)、罗斯基勒音乐节(Roskilde)、出口音乐节(EXIT)、无线音乐节(Wireless)和雷丁音乐节(Reading)等，旗下的乐堡绿放音乐节(GreenFest)更是深受欧洲年轻人的喜爱，乐堡啤酒已经成为国际音乐节文化中不可或缺的一部分。"
+        android:textColor="#ff404040"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffdee2e3" />
+
+</LinearLayout>

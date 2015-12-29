@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/sohuodongLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/logoinlogin"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/findbaricon4" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logoinlogin"
+            android:gravity="center"
+            android:text="趣聚"
+            android:textColor="#ffffffff"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loginandregisterbuttonframe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/login_main_loginbutton"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/green_btn_style"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="#ffffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="60dip"
+            android:layout_height="match_parent"
+            android:height="40dp" />
+
+        <TextView
+            android:id="@+id/login_main_regbutton"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/gray_btn_style"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="#ff505050"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

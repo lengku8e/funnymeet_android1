@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/somain_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="15dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <com.mtcent.funnymeet.ui.view.control.XVURLImageView
+                        android:id="@+id/person_info_headimage"
+                        android:layout_width="70dip"
+                        android:layout_height="70dip"
+                        android:layout_marginRight="10dip"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/daidai" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/person_info_nickname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="呆呆向前冲"
+                                android:textColor="#ff000000"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="20dip"
+                                android:layout_height="20dip"
+                                android:layout_marginLeft="5dip"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_sex_male" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dip"
+                            android:text="用户号码:wangweixing"
+                            android:textColor="#ff808080"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dip"
+                    android:background="@drawable/finditemstyle"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="15dip"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:paddingTop="15dip" >
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:text="会员"
+                        android:textColor="#ff353535"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="40人"
+                        android:textColor="#ff9a9a9a"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#ffdbdbdb" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/finditemstyle"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="15dip"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:paddingTop="15dip" >
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:text="类型"
+                        android:textColor="#ff353535"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公众俱乐部"
+                        android:textColor="#ff9a9a9a"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#ffdbdbdb" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/finditemstyle"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:paddingTop="10dip" >
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:text="相关活动"
+                        android:textColor="#ff353535"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:layout_marginRight="10dip"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/hdcircle_content" />
+
+                    <ImageView
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:layout_marginRight="10dip"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/preview" />
+
+                    <ImageView
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:layout_marginRight="10dip"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/test1" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:layout_marginTop="30dip"
+                    android:background="@drawable/gray_btn_style"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="关注动态"
+                    android:textColor="#ff5c5c5c"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/person_info_sentmessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/green_btn_style"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="申请加入"
+                    android:textColor="#ffffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/exit_club"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/red_btn_style"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="退出俱乐部"
+                    android:textColor="#ffffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="finditem_select_color">#15000000</color>
+    <color name="finditem_unselect_color">#00000000</color>
+    <color name="button_select_color">#ffbb0061</color>
+    <color name="button_unselect_color">#ffd6006f</color>
+    <color name="title_select_color">#33000000</color>
+    <color name="title_unselect_color">#00000000</color>
+    <color name="menu_select_color">#00000000</color>
+    <color name="menu_unselect_color">#ff303538</color>
+    <color name="dateweekandleftdays_background">#ffdddddd</color>
+    <color name="hdinfolist_building">#ff9f9f9f</color>
+    <color name="hdinfolist_city">#ff8f8f8f</color>
+    <color name="hdinfolist_date">#ff525453</color>
+    <color name="hdinfolist_week">#ff525453</color>
+    <color name="sohuodongtheme_color">#ffd6006f</color>
+    <color name="sohuodongtheme_color_gray">#ff303538</color>
+    <color name="hdlist_select_color">#22000000</color>
+    <color name="hdlist_unselect_color">#ffffffff</color>
+    <color name="black">#000000</color> <!-- 黑色 -->
+    <color name="findtitlebar_background">#ff2d3132</color>
+    <color name="loginandregister_region_color">#ff45c01a</color>
+    <color name="dialog_background">#88000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="green_btn_rect_normal">#ff45c01a</color>
+    <color name="green_btn_rect_press">#ff298409</color>
+    <color name="user_joined_huodong">#feca6e</color>
+    <color name="user_notjoined_huodong">#00bb45</color>
+    <color name="user_focused_huodong">#feca6e</color>
+    <color name="user_notfocused_huodong">#00bb45</color>
+
+</resources>

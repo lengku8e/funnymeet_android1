@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\xiangmu\funnymeet_android\funnymeet.android\build\intermediates\exploded-aar\funnymeet_android.funnymeet.android.library\library\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e26265062dc43e3f75458e9c992c2536e99114e6">
+        <dex dex="C:\xiangmu\funnymeet_android\funnymeet.android\build\intermediates\pre-dexed\debug\classes-ab989df5e3a6b9a0f430f875c260f6ffb9939dcf.jar" />
+    </item>
+    <item
+        jar="C:\xiangmu\funnymeet_android\funnymeet.android\libs\qinniu.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="46506de46162ba04a64ade97aee091666d659a34">
+        <dex dex="C:\xiangmu\funnymeet_android\funnymeet.android\build\intermediates\pre-dexed\debug\qinniu-aeb670d0ccd4cc93809f5ad8aeffc82fc0c3a873.jar" />
+    </item>
+    <item
+        jar="C:\xiangmu\funnymeet_android\funnymeet.android\libs\mta-sdk-1.6.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c184c69f43b1fe46390f7123717c65bd844bccb6">
+        <dex dex="C:\xiangmu\funnymeet_android\funnymeet.android\build\intermediates\pre-dexed\debug\mta-sdk-1.6.2-295bcd49236d37e7befe3528103b4ad3ed0c3df3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\in.srain.cube\clog\1.0.2\4b857e5d62a7243e74fd0307639fff5a54f8f030\clog-1.0.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4b857e5d62a7243e74fd0307639fff5a54f8f030">
+        <dex dex="C:\xiangmu\funnymeet_android\funnymeet.android\build\intermediates\pre-dexed\debug\clog-1.0.2-6d277bd8343d0a74f75e10a52e2376e79db4b2d1.jar" />
+    </item>
+    <item
+        jar="C:\xiangmu\funnymeet_android\funnymeet.android\libs\core.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="96b67e377ff4637ff1fa3bbe9ad7183773935f39">
+        <dex dex="C:\xiangmu\funnymeet_android\funnymeet.android\build\intermediates\pre-dexed\debug\core-036fb7eb80f0294d2435b5ad26164ec9077c74ab.jar" />
+    </item>
+    <item
+        jar="C:\xiangmu\funnymeet_android\funnymeet.android\build\intermediates\exploded-aar\in.srain.cube\ultra-ptr\1.0.9.1-SNAPSHOT\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="545cf1308040689099fed65752d8924947b199b1">
+        <dex dex="C:\xiangmu\funnymeet_android\funnymeet.android\build\intermediates\pre-dexed\debug\classes-dee1177610016f3d8d38b4342b2486c7be2cea29.jar" />
+    </item>
+    <item
+        jar="C:\xiangmu\funnymeet_android\funnymeet.android\libs\locSDK_4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8b405c3054e12d913fa5aafb160c294e642dc673">
+        <dex dex="C:\xiangmu\funnymeet_android\funnymeet.android\build\intermediates\pre-dexed\debug\locSDK_4.0-d8d0efc1c5a65e31fdb90eed11faf87983bdb65d.jar" />
+    </item>
+    <item
+        jar="C:\xiangmu\funnymeet_android\funnymeet.android\build\intermediates\exploded-aar\funnymeet_android\viewpagerlibrary\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="14cddee2dba7fae8d63347b5c56e4c1aad8fe748">
+        <dex dex="C:\xiangmu\funnymeet_android\funnymeet.android\build\intermediates\pre-dexed\debug\classes-cf4dcc0ad96d713fa4237cc3cc1af2a803987150.jar" />
+    </item>
+    <item
+        jar="C:\xiangmu\funnymeet_android\funnymeet.android\build\intermediates\exploded-aar\in.srain.cube\cube-sdk\1.0.44.33-SNAPSHOT\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="820e457cc413cabd5d75ad9b6ec11695219ca8fc">
+        <dex dex="C:\xiangmu\funnymeet_android\funnymeet.android\build\intermediates\pre-dexed\debug\classes-c7e108fb0dbd77094bf454e9841cd3e69d83158b.jar" />
+    </item>
+    <item
+        jar="C:\kaifa\android-sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="C:\xiangmu\funnymeet_android\funnymeet.android\build\intermediates\pre-dexed\debug\support-v4-18.0.0-3f6c38cbfa8717d65a1ae76228b1ad87dccf4ab0.jar" />
+    </item>
+    <item
+        jar="C:\xiangmu\funnymeet_android\funnymeet.android\libs\weibosdkcore.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="06e990ea2d7b7ccd30cea6c5367314d7314d9f40">
+        <dex dex="C:\xiangmu\funnymeet_android\funnymeet.android\build\intermediates\pre-dexed\debug\weibosdkcore-15181d3b9e84c14c8aa7639c3fc0158ecbcd2afd.jar" />
+    </item>
+    <item
+        jar="C:\xiangmu\funnymeet_android\funnymeet.android\libs\pinyin4j-2.5.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ae353005f973da1cd8545b54354504c2503f6865">
+        <dex dex="C:\xiangmu\funnymeet_android\funnymeet.android\build\intermediates\pre-dexed\debug\pinyin4j-2.5.0-44de66bcd6723344a43914472394f7b2806b8b38.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\de.greenrobot\eventbus\2.4.0\ddd166d01b3158d1c00576d29f7ed15c030df719\eventbus-2.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ddd166d01b3158d1c00576d29f7ed15c030df719">
+        <dex dex="C:\xiangmu\funnymeet_android\funnymeet.android\build\intermediates\pre-dexed\debug\eventbus-2.4.0-03e25c6b3178abc8ecb48b05be1f281aa0724b29.jar" />
+    </item>
+    <item
+        jar="C:\xiangmu\funnymeet_android\funnymeet.android\libs\libammsdk.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a5f20a9010df32cb73db28ec33964ed8b4c503cc">
+        <dex dex="C:\xiangmu\funnymeet_android\funnymeet.android\build\intermediates\pre-dexed\debug\libammsdk-bce078de43b77276abb1b009f27599e1446e8706.jar" />
+    </item>
+    <item
+        jar="C:\xiangmu\funnymeet_android\funnymeet.android\libs\open_sdk.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9713db0c781e0159b783ee736e6d455fa86db8b3">
+        <dex dex="C:\xiangmu\funnymeet_android\funnymeet.android\build\intermediates\pre-dexed\debug\open_sdk-bef68589fa723cb0df06588f32565b6639b70c68.jar" />
+    </item>
+    <item
+        jar="C:\xiangmu\funnymeet_android\funnymeet.android\libs\baidu_tongji_api_3_5.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="877c27959dca13f77e823a6b58d52ab7462e8a40">
+        <dex dex="C:\xiangmu\funnymeet_android\funnymeet.android\build\intermediates\pre-dexed\debug\baidu_tongji_api_3_5-fabb60bd2561fb2395b1ad9fd9ec00a363c1f311.jar" />
+    </item>
+
+</items>

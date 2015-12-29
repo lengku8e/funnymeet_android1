@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/finditemstyle"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="所有"
+        android:textColor="#ff808080"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffcccccc" />
+
+    <TextView
+        android:id="@+id/currentMonth"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/finditemstyle"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="本月"
+        android:textColor="#ff808080"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffcccccc" />
+
+    <TextView
+        android:id="@+id/currentWeek"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/finditemstyle"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="本周"
+        android:textColor="#ff808080"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffcccccc" />
+
+</LinearLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/popmenu_layout.xml -->

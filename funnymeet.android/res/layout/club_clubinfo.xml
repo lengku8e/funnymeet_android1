@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffefeff4"
+    android:orientation="vertical">
+
+    <include layout="@layout/somain_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dip">
+
+                <com.mtcent.funnymeet.ui.view.control.CustomImageView
+                    android:id="@+id/club_icon"
+                    app:src="@drawable/defaultface"
+                    app:type="circle"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_marginRight="10dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="10dip">
+
+                    <TextView
+                        android:id="@+id/club_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="俱乐部资料"
+                        android:textColor="#ff000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/club_info_club_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="俱乐部号：12345"
+                        android:textColor="#BEBEBE"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="#ffffffff"
+                android:orientation="horizontal"
+                android:padding="10dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="20dip"
+                    android:text="俱乐部介绍"
+                    android:textColor="#ff000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/club_brief"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:lineSpacingMultiplier="1.0"
+                    android:textColor="#ff000000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/update_club_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="#ffffffff"
+                android:orientation="horizontal"
+                android:padding="10dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="20dip"
+                    android:text="我在本俱乐部的昵称"
+                    android:textColor="#ff000000"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/club_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:lineSpacingMultiplier="1.0"
+                        android:text="群昵称"
+                        android:textColor="#ffbebebe"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginTop="20dip"
+                android:background="#ffffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="接受消息"
+                    android:textColor="#ff000000"
+                    android:textSize="14sp" />
+
+                <ToggleButton
+                    android:id="@+id/mTogBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/checkbox_iphone"
+                    android:checked="false"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/club_info_view_homepage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/finditemstyle"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="查看俱乐部主页"
+                    android:textColor="#ff000000"
+                    android:textSize="14sp"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:background="@drawable/finditemstyle"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="查看地理位置"
+                    android:textColor="#ff000000"
+                    android:textSize="14sp"
+                    android:visibility="gone"></TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/to_club_homepage"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="30dip"
+                android:background="@drawable/green_btn_style"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="进入俱乐部"
+                android:textColor="#ffffffff"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/apply_takepartin_club"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/green_btn_style"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="申请加入"
+                android:textColor="#ffffffff"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/inchecking"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/green_btn_style"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="会员资格审核中"
+                android:textColor="#ffffffff"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/exit_club"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/red_btn_style"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="退出俱乐部"
+                android:textColor="#ffffffff"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

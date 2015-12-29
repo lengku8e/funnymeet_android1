@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/chat_to_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/chat_to_content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/chat_to_bg_normal"
+            android:gravity="center_vertical"
+            android:text="抄你是看得起你 ~.~"
+            android:textColor="#ff000000"
+            android:textSize="14sp" />
+
+        <com.mtcent.funnymeet.ui.view.control.XVURLImageView
+            android:id="@+id/chatHeadImage"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/daidai" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/hoster_chat_tolayout.xml -->

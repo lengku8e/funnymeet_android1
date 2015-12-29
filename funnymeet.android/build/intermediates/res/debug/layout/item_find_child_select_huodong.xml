@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/title_buttonstyle"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <com.mtcent.funnymeet.ui.view.control.XVURLImageView
+        android:id="@+id/pic"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ff808080"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="7dp"
+        android:paddingTop="3dp"
+        android:text="提建议"
+        android:textColor="#ff2d2d2d"
+        android:textSize="17sp" />
+
+</LinearLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/item_find_child_select_huodong.xml -->

@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dip"
+        android:background="#ffcccccc"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/new_meeting_date_indicator_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffeeeeee"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/new_meeting_date"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:maxLines="1"
+            android:text="12月16日"
+            android:textColor="#ff333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/new_meeting_week"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周四"
+            android:textColor="#ff333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/new_meeting_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+10天"
+            android:textColor="#ff333333"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/finditemstyle"
+        android:paddingBottom="8dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="8dip" >
+
+        <com.mtcent.funnymeet.ui.view.control.XVURLImageView
+            android:id="@+id/new_meeting_icon"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dip"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/new_meeting_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/new_meeting_icon"
+            android:layout_marginBottom="5dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@id/new_meeting_icon"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="活动组织培训"
+            android:textColor="#ff333333"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/new_meeting_status"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/new_meeting_title"
+            android:layout_marginBottom="5dip"
+            android:src="@drawable/huodong_focused" />
+
+        <TextView
+            android:id="@+id/new_meeting_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/new_meeting_title"
+            android:layout_marginRight="5dip"
+            android:layout_toRightOf="@id/new_meeting_icon"
+            android:text="深圳"
+            android:textColor="#ff808080"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/new_meeting_building"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/new_meeting_title"
+            android:layout_marginRight="5dip"
+            android:layout_toRightOf="@id/new_meeting_city"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="地王大厦"
+            android:textColor="#ff808080"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/new_meeting_ground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/new_meeting_title"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@id/new_meeting_status"
+            android:layout_toRightOf="@id/new_meeting_building"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="一笑茶楼"
+            android:textColor="#ff808080"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

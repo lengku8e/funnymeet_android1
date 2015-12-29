@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/reply_user_avatar"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/new_fake_avatar" />
+
+            <TextView
+                android:id="@+id/reply_user_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/reply_user_avatar"
+                android:layout_marginBottom="3dip"
+                android:layout_toRightOf="@+id/reply_user_avatar"
+                android:text="zhili98_"
+                android:textColor="#ff333333"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/reply_floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reply_user_nickname"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="2dip"
+                android:layout_toRightOf="@id/reply_user_avatar"
+                android:text="第2楼"
+                android:textColor="#ffaaaaaa"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/reply_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/reply_user_avatar"
+                android:layout_below="@id/reply_user_nickname"
+                android:layout_toRightOf="@id/reply_floor"
+                android:textColor="#ffaaaaaa"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/reply_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reply_user_avatar"
+                android:layout_marginTop="5dip"
+                android:layout_toRightOf="@id/reply_user_avatar"
+                android:lineSpacingMultiplier="1.2"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

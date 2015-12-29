@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="ultra-ptr-1.0.9.1-SNAPSHOT">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/funnymeet.android/build/intermediates/exploded-aar/in.srain.cube/ultra-ptr/1.0.9.1-SNAPSHOT/res" />
+      <root url="jar://$PROJECT_DIR$/funnymeet.android/build/intermediates/exploded-aar/in.srain.cube/ultra-ptr/1.0.9.1-SNAPSHOT/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

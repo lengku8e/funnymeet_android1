@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/somain_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dip" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1"
+                android:maxLines="2"
+                android:text="唯品会高管披露最新价格策略：自建物流 借大数据优化特卖"
+                android:textColor="#ff000000"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:layout_marginRight="10dip"
+                    android:text="2014-08-19"
+                    android:textColor="#ff909090"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:layout_marginRight="10dip"
+                    android:text="余维维"
+                    android:textColor="#ff909090"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:text="DoNews"
+                    android:textColor="#ff406ca2"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dip"
+                android:layout_marginTop="15dip"
+                android:scaleType="centerCrop"
+                android:src="@drawable/weipinhui" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:lineSpacingMultiplier="1.2"
+                android:text="上周，唯品会发布了其2014 Q2财报，报告显示，唯品会在2014 Q2中总净营收为8.294亿美元，同比增长136.1%；净利润为2640万美元，同比增长192.1%。对于这一只上市两年多涨幅已超30倍的“妖股”，这种情况下，投资者愿意相信其是国内可能会在电商行业内获取相对优势地位的公司。但如今，体量愈发庞大的唯品会，已经被行业所重视。无论是身后的当当聚美，还是身前的阿里京东，都逐步在模式及品类上进行着布局。随着玩家的增多，唯品会建立的规则已经逐步在发生变化。作为一个包销渠道，如果只是泛泛的提供商品，平台型电商完全可以更有效率地替代你。"
+                android:textColor="#ff111111"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:text="阅读原文"
+                    android:textColor="#ff406ca2"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="阅读27614"
+                    android:textColor="#ff909090"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="举报"
+                    android:textColor="#ff909090"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/find_common_news_content.xml -->

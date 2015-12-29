@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical" >
+
+    <include layout="@layout/somain_title" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_marginBottom="1dip"
+            android:background="#ebebeb" />
+
+        <LinearLayout
+            android:id="@+id/my_club_check_member_inputphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+             android:background="#fff"
+            android:paddingRight="12dp"
+            android:paddingTop="8dp" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="12dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/invite_message" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="8dp" >
+
+                <EditText
+                    android:id="@+id/my_clubs_invite_phones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:background="@drawable/login_edittext_long_style"
+                    android:hint="请填写手机号"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="填写邀请对象的手机号，多号码以加号(+)分隔"
+                    android:textColor="#808080"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/my_club_check_member_separator"
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_marginBottom="1dip"
+            android:background="#ebebeb" />
+
+        <com.mtcent.funnymeet.ui.view.control.IndexableListView
+            android:id="@+id/phone_contact_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#fff"
+            android:layout_weight="1"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            android:transcriptMode="disabled" >
+        </com.mtcent.funnymeet.ui.view.control.IndexableListView>
+
+
+</LinearLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/my_clubs_invite_member_contact_list.xml -->

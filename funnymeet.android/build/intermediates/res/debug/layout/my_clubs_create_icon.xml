@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/somain_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:gravity="center"
+        android:text="上传精美俱乐部标志,让你的俱乐部与众不同"
+        android:textColor="#ff808080"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="180dip"
+        android:layout_height="80dip"
+        android:layout_marginLeft="10dip"
+        android:background="#30303538"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/my_clubs_create_fakeicon"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+          
+            android:background="#ffa3d3ec"
+            android:scaleType="centerInside"
+            android:src="@drawable/com_tencent_qqpicshow" />
+
+        <com.mtcent.funnymeet.ui.view.control.XVURLImageView
+            android:id="@+id/my_clubs_create_realicon"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+           
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/my_clubs_create_chooseicon"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/green_btn_style"
+        android:gravity="center"
+        android:text="上传俱乐部标志"
+        android:textColor="#ffffffff"
+        android:textSize="14sp" />
+
+</LinearLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/my_clubs_create_icon.xml -->

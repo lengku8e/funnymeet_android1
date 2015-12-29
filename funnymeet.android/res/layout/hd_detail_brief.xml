@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/briefframe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffdee2e3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="10dip"
+        android:text="活动简介"
+        android:textColor="#ff808080"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/hdbriefcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="1.5"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:text="在此次公布的全阵容和演出时间表中，每个舞台每天的风格更加鲜明，也更有特色：反光镜强势加盟周五音乐节首日，让乐迷们无需热身直接进入噪翻音乐节的状态。为人低调，但是在广大年轻乐迷中积累了良好口碑的万能青年旅店也将把今年的西北首演带到银川。近年来人气极高的于湉将在周日下午，带来温暖阳光又活力十足的现场表演。"
+        android:textColor="#ff404040"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/hdallcontent"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dip"
+        android:gravity="right|center_vertical"
+        android:text="查看图文详情"
+        android:textColor="#ff516a8f" 
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffdee2e3" />
+
+</LinearLayout>

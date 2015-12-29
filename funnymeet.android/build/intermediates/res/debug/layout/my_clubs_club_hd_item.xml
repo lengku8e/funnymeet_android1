@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/cardbase"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="20dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:id="@+id/my_clubs_hd_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2014年9月11日"
+                android:textColor="#ff808080"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/my_clubs_hd_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="微信话费充值1周年，因为你更精彩"
+                android:textColor="#ff000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/my_clubs_hd_preview_frame"
+                android:layout_width="match_parent"
+                android:layout_height="130dip" >
+
+                <com.mtcent.funnymeet.ui.view.control.XVURLImageView
+                    android:id="@+id/my_clubs_hd_preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dip"
+                    android:layout_marginTop="5dip"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/my_clubs_hd_mask"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#50000000"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:padding="5dip"
+                    android:text="微信话费充值1周年，因为你更精彩"
+                    android:textColor="#ffffffff"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/my_clubs_hd_brief"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:lineSpacingMultiplier="1.2"
+                android:text="QCon是由InfoQ主办的全球顶级技术盛会，每年在伦敦、北京、东京、纽约、圣保罗、上海、旧金山召开。自2007年3月份首次举办以来，已经有包括传统制造、金融、电信、互联网、航空航天等领域的近万名架构师、项目经理、团队领导者和高级开发人员参加过QCon大会。"
+                android:textColor="#ff909090"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dip"
+                android:background="#ffcccccc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="查看活动"
+                android:textColor="#ff000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/my_clubs_club_hd_item.xml -->

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/branddetailScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/hdbriefcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:text="迪奥（Dior），由法国时装设计师克里斯汀·迪奥（Christian Dior）于1946年创于巴黎，是世界著名的时尚消费品牌。主要经营女装、男装、首饰、香水、化妆品等高档消费品。亦为全球的高级时尚品牌控股公司——LVMH路易威登集团的子公司。"
+                android:textColor="#ff404040"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/find_brand_detail_information.xml -->

@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menuListLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|right"
+    android:layout_marginTop="36dp"
+    android:background="@drawable/menu_bg"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/menuList"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/black"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dip"
+        android:listSelector="@android:color/transparent"
+        android:overScrollMode="never"
+        android:transcriptMode="disabled" >
+    </ListView>
+
+</LinearLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/menu.xml -->

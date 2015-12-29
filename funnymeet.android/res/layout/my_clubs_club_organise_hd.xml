@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/somain_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#f5f5f5"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#f5f5f5"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/white_corner"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/club_hd_title_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dip"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="20dip"
+                        android:gravity="center"
+                        android:text="活动标题"
+                        android:textColor="#ff000000" />
+
+                    <EditText
+                        android:id="@+id/club_hd_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dip"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:hint="填写活动标题，长度不超过40个字符"
+                        android:paddingLeft="20dip"
+                        android:paddingRight="20dip"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="#f5f5f5" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/white_corner"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/club_hd_start_date_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dip"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="10dip"
+                        android:gravity="center"
+                        android:text="开始日期"
+                        android:textColor="#ff000000" />
+
+                    <TextView
+                        android:id="@+id/club_hd_start_date_day_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="1dip"
+                        android:layout_marginRight="20dip"
+                        android:gravity="center"
+                        android:text="日"
+                        android:textColor="#ff000000" />
+
+                    <EditText
+                        android:id="@+id/club_hd_start_date_day"
+                        android:layout_width="24dp"
+                        android:layout_height="30dip"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/club_hd_start_date_day_label"
+                        android:background="@drawable/weekday_today"
+                        android:gravity="center"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:paddingLeft="1dip"
+                        android:paddingRight="1dip"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/club_hd_start_date_month_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dip"
+                        android:layout_marginLeft="1dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_toLeftOf="@id/club_hd_start_date_day"
+                        android:gravity="center"
+                        android:text="月"
+                        android:textColor="#ff000000" />
+
+                    <EditText
+                        android:id="@+id/club_hd_start_date_month"
+                        android:layout_width="24dp"
+                        android:layout_height="30dip"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/club_hd_start_date_month_label"
+                        android:background="@drawable/weekday_today"
+                        android:gravity="center"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:paddingLeft="1dip"
+                        android:paddingRight="1dip"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/club_hd_start_date_year_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dip"
+                        android:layout_marginLeft="1dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_toLeftOf="@id/club_hd_start_date_month"
+                        android:gravity="center"
+                        android:text="年"
+                        android:textColor="#ff000000" />
+
+                    <EditText
+                        android:id="@+id/club_hd_start_date_year"
+                        android:layout_width="48dp"
+                        android:layout_height="30dip"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/club_hd_start_date_year_label"
+                        android:background="@drawable/weekday_today"
+                        android:gravity="center"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:paddingLeft="1dip"
+                        android:paddingRight="1dip"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="#f5f5f5" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/white_corner"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/club_hd_start_time_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dip"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="20dip"
+                        android:gravity="center"
+                        android:text="开始时间"
+                        android:textColor="#ff000000" />
+
+                    <TextView
+                        android:id="@+id/club_hd_start_time_must"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="1dip"
+                        android:layout_marginRight="20dip"
+                        android:gravity="center"
+                        android:text="必填"
+                        android:textColor="#9c9c9c" />
+
+                    <EditText
+                        android:id="@+id/club_hd_start_time_m"
+                        android:layout_width="24dp"
+                        android:layout_height="30dip"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/club_hd_start_time_must"
+                        android:background="@drawable/weekday_today"
+                        android:gravity="center"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:paddingLeft="1dip"
+                        android:paddingRight="1dip"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/club_hd_start_time_colon_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dip"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_toLeftOf="@id/club_hd_start_time_m"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text=":"
+                        android:textColor="#ff000000" />
+
+                    <EditText
+                        android:id="@+id/club_hd_start_time_h"
+                        android:layout_width="24dp"
+                        android:layout_height="30dip"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/club_hd_start_time_colon_label"
+                        android:background="@drawable/weekday_today"
+                        android:gravity="center"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:paddingLeft="1dip"
+                        android:paddingRight="1dip"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="#f5f5f5" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/white_corner"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/club_hd_end_date_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dip"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="10dip"
+                        android:gravity="center"
+                        android:text="结束日期"
+                        android:textColor="#ff000000" />
+
+                    <TextView
+                        android:id="@+id/club_hd_end_date_day_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="1dip"
+                        android:layout_marginRight="20dip"
+                        android:gravity="center"
+                        android:text="日"
+                        android:textColor="#ff000000" />
+
+                    <EditText
+                        android:id="@+id/club_hd_end_date_day"
+                        android:layout_width="24dp"
+                        android:layout_height="30dip"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/club_hd_end_date_day_label"
+                        android:background="@drawable/weekday_today"
+                        android:gravity="center"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:paddingLeft="1dip"
+                        android:paddingRight="1dip"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/club_hd_end_date_month_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dip"
+                        android:layout_marginLeft="1dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_toLeftOf="@id/club_hd_end_date_day"
+                        android:gravity="center"
+                        android:text="月"
+                        android:textColor="#ff000000" />
+
+                    <EditText
+                        android:id="@+id/club_hd_end_date_month"
+                        android:layout_width="24dp"
+                        android:layout_height="30dip"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/club_hd_end_date_month_label"
+                        android:background="@drawable/weekday_today"
+                        android:gravity="center"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:paddingLeft="1dip"
+                        android:paddingRight="1dip"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/club_hd_end_date_year_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dip"
+                        android:layout_marginLeft="1dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_toLeftOf="@id/club_hd_end_date_month"
+                        android:gravity="center"
+                        android:text="年"
+                        android:textColor="#ff000000" />
+
+                    <EditText
+                        android:id="@+id/club_hd_end_date_year"
+                        android:layout_width="48dp"
+                        android:layout_height="30dip"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/club_hd_end_date_year_label"
+                        android:background="@drawable/weekday_today"
+                        android:gravity="center"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:paddingLeft="1dip"
+                        android:paddingRight="1dip"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="#f5f5f5" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/white_corner"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/club_hd_end_time_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dip"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="20dip"
+                        android:gravity="center"
+                        android:text="结束时间"
+                        android:textColor="#ff000000" />
+
+                    <TextView
+                        android:id="@+id/club_hd_end_time_must"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="1dip"
+                        android:layout_marginRight="20dip"
+                        android:gravity="center"
+                        android:text="必填"
+                        android:textColor="#9c9c9c" />
+
+                    <EditText
+                        android:id="@+id/club_hd_end_time_m"
+                        android:layout_width="24dp"
+                        android:layout_height="30dip"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/club_hd_end_time_must"
+                        android:background="@drawable/weekday_today"
+                        android:gravity="center"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:paddingLeft="1dip"
+                        android:paddingRight="1dip"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/club_hd_end_time_colon_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dip"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_toLeftOf="@id/club_hd_end_time_m"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="#ff000000" />
+
+                    <EditText
+                        android:id="@+id/club_hd_end_time_h"
+                        android:layout_width="24dp"
+                        android:layout_height="30dip"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/club_hd_end_time_colon_label"
+                        android:background="@drawable/weekday_today"
+                        android:gravity="center"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:paddingLeft="1dip"
+                        android:paddingRight="1dip"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="#f5f5f5" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/white_corner"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/club_hd_fee_type_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dip"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="20dip"
+                        android:gravity="center"
+                        android:text="收费类型"
+                        android:textColor="#ff000000" />
+
+                    <TextView
+                        android:id="@+id/club_hd_fee_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dip"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:paddingLeft="20dip"
+                        android:paddingRight="20dip"
+                        android:text="免费"
+                        android:textColor="#ff808080"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="#f5f5f5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/white_corner"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/club_hd_address_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dip"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginRight="20dip"
+                        android:gravity="center"
+                        android:text="活动地点"
+                        android:textColor="#ff000000" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/club_hd_district_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dip"
+                            android:layout_marginLeft="20dip"
+                            android:layout_marginRight="20dip"
+                            android:gravity="center"
+                            android:text="地区"
+                            android:textColor="#ff000000" />
+
+                        <TextView
+                            android:id="@+id/club_hd_district"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dip"
+                            android:layout_alignParentRight="true"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:paddingLeft="20dip"
+                            android:paddingRight="20dip"
+                            android:text="请选择省   市   区"
+                            android:textColor="#ff808080"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/club_hd_address_detail_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dip"
+                            android:layout_marginLeft="20dip"
+                            android:layout_marginRight="20dip"
+                            android:gravity="center"
+                            android:text="地址"
+                            android:textColor="#ff000000" />
+
+                        <EditText
+                            android:id="@+id/club_hd_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dip"
+                            android:layout_alignParentRight="true"
+                            android:background="@null"
+                            android:hint="输入地址"
+                            android:paddingLeft="20dip"
+                            android:paddingRight="20dip"
+                            android:textColor="#ff000000"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/club_hd_building_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dip"
+                            android:layout_marginLeft="20dip"
+                            android:layout_marginRight="20dip"
+                            android:gravity="center"
+                            android:text="建筑物"
+                            android:textColor="#ff000000" />
+
+                        <EditText
+                            android:id="@+id/club_hd_building"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dip"
+                            android:layout_alignParentRight="true"
+                            android:background="@null"
+                            android:hint="输入建筑物"
+                            android:paddingLeft="20dip"
+                            android:paddingRight="20dip"
+                            android:textColor="#ff000000"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/club_hd_location_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dip"
+                            android:layout_marginLeft="20dip"
+                            android:layout_marginRight="20dip"
+                            android:gravity="center"
+                            android:text="场所"
+                            android:textColor="#ff000000" />
+
+                        <EditText
+                            android:id="@+id/club_hd_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dip"
+                            android:layout_alignParentRight="true"
+                            android:background="@null"
+                            android:hint="输入场所"
+                            android:paddingLeft="20dip"
+                            android:paddingRight="20dip"
+                            android:textColor="#ff000000"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="#f5f5f5" />
+
+                <TextView
+                    android:id="@+id/createhd"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/green_btn_style"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:scaleType="fitCenter"
+                    android:text="发起活动"
+                    android:textColor="#ffffffff"
+                    android:textSize="15dp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#f5f5f5" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

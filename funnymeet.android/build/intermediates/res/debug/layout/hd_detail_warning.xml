@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/noticeframe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffdee2e3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="10dip"
+        android:text="注意事项"
+        android:textColor="#ff808080"
+        android:textSize="18sp" />
+
+
+
+    <TextView
+        android:id="@+id/warningcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="1.5"
+        android:paddingBottom="10dip"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="中国最大规模的新音乐公司摩登天空一直将经营主旨定位在“推广国际音乐一体化”之上，并主张将中国新音乐推向国际的同时，也将国际上优秀的音乐引进国内，从而为中国新音乐的发展创造良好的环境，旗下的草莓音乐节更是成为国内最具大众普及度及美誉度的音乐节第一大品牌。"
+        android:textColor="#ff404040"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffdee2e3" />
+
+</LinearLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/hd_detail_warning.xml -->

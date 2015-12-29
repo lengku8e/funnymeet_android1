@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/somain_title" />
+
+    <EditText
+        android:id="@+id/my_clubs_new_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/login_edittext_long_style"
+        android:hint="请填写俱乐部名称(2~10字)"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/my_clubs_new_name_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="5dip"
+        android:gravity="right"
+        android:text="10"
+        android:textColor="#ff808080"
+        android:textSize="12sp" />
+
+</LinearLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/my_club_setting_change_name.xml -->

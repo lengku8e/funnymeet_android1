@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/login_problem_dialog_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="俱乐部会员验证"
+                android:textColor="#ff45c01a"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#ffaaaaaa" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/check_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dip"
+                        android:text="你正在对25名申请人进行批量验证操作"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/my_clubs_check_member_addtion"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/login_edittext_long_style"
+                    android:hint="俱乐部欢迎词/拒绝理由"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ffcccccc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/my_clubs_check_member_cancel"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/finditemstyle"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="拒绝"
+                    android:textColor="#ff404040"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#ffcccccc" />
+
+                <TextView
+                    android:id="@+id/my_clubs_check_member_confirm"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/finditemstyle"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="同意"
+                    android:textColor="#ff404040"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

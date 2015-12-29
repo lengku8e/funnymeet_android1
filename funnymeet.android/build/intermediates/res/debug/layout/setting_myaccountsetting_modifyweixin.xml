@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff" >
+
+    <include
+        android:id="@+id/setting_modifymobile_title"
+        layout="@layout/somain_title" />
+
+    <LinearLayout
+        android:id="@+id/setting_modifymobile_bottomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/setting_modifymobile_change"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rcd_cancel_bg"
+            android:gravity="center"
+            android:text="解除绑定"
+            android:textColor="#ffffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/setting_modifymobile_currnetmobile"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/setting_modifymobile_bottomButton"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/my_game_cell"
+        android:gravity="center"
+        android:text="绑定微信：OKernel"
+        android:textColor="#ff808080"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/setting_modifymobile_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/setting_modifymobile_currnetmobile"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="你已经绑定微信号，现在你可以使用与微信相关的功能了，并且可以找到更多的微信好友。"
+        android:textColor="#ff808080"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_above="@id/setting_modifymobile_hint"
+        android:layout_below="@id/setting_modifymobile_title"
+        android:layout_centerHorizontal="true"
+        android:scaleType="center"
+        android:src="@drawable/copyright" />
+
+</RelativeLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/setting_myaccountsetting_modifyweixin.xml -->

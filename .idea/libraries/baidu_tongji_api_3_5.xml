@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="baidu_tongji_api_3_5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/funnymeet.android/libs/baidu_tongji_api_3_5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

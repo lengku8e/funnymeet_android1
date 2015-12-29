@@ -1,0 +1,273 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="#ff303538"
+    android:gravity="left|center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/left_backLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_buttonstyle"
+        android:gravity="center"
+        android:orientation="horizontal">
+       <!-- 定义颜色，到相应的xml文件中title_buttonstyle，再去clor。xml-->
+        <ImageView
+            android:id="@+id/left_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/findbaricon" />
+
+        <ImageView
+            android:id="@+id/left_comment_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/comment_frame" />
+
+        <ImageView
+            android:id="@+id/left_back_icon"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.08"
+            android:scaleType="fitCenter"
+            android:src="@drawable/left_back_icon3"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/left_back_text"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="返回"
+            android:textColor="#ffffffff"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="20dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="趣聚"
+            android:textColor="#ffffffff"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/title_squeeze"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/menubuttonstyle"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/finishbutton"
+        android:layout_width="54dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/green_btn_style"
+        android:clickable="true"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:text="完成"
+        android:textColor="#ffffffff"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/senter"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_buttonstyle"
+        android:clickable="true"
+        android:drawableLeft="@drawable/comment_frame"
+        android:gravity="center"
+        android:text="发送"
+        android:textColor="#ffffffff"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/qrcode_album"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_buttonstyle"
+        android:clickable="true"
+        android:drawableLeft="@drawable/comment_frame"
+        android:gravity="center"
+        android:text="相册"
+        android:textColor="#ffffffff"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/next_step"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_buttonstyle"
+        android:clickable="true"
+        android:drawableLeft="@drawable/comment_frame"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="#ff909495"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/club_search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_buttonstyle"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="60dip"
+            android:layout_height="match_parent"
+            android:padding="12dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/actionbar_search_icon" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/newClubs"
+        android:layout_width="90dip"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_buttonstyle"
+        android:clickable="true"
+        android:drawableLeft="@drawable/comment_frame"
+        android:gravity="center"
+        android:text="创建俱乐部"
+        android:textColor="#ffffffff"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/title_search_bar"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_weight="1"
+        android:background="@drawable/input_bar_bg_active"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/actionbar_search_icon" />
+
+        <EditText
+            android:id="@+id/smart_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:background="@null"
+            android:hint="搜索"
+            android:textColor="#ffffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/title_search_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/input_bar_bg_active"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/actionbar_voicesearch_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_club"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_buttonstyle"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/addClubs"
+            android:layout_width="90dip"
+            android:layout_height="match_parent"
+            android:background="@drawable/title_buttonstyle"
+            android:clickable="true"
+            android:drawableLeft="@drawable/comment_frame"
+            android:gravity="center"
+            android:text="添加俱乐部"
+            android:textColor="#ffffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/club_setting_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_buttonstyle"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="60dip"
+            android:layout_height="match_parent"
+            android:padding="12dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/findbaricon4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/create_new_post"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/title_buttonstyle"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="60dip"
+            android:layout_height="match_parent"
+            android:padding="12dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_all_sign" />
+    </LinearLayout>
+
+</LinearLayout>

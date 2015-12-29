@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/cardbase"
+        android:orientation="vertical"
+        android:padding="10dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/new_fake_avatar" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="45dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:text="zhili98_"
+                    android:textColor="#ff333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015-5-25 23:33:23"
+                    android:textColor="#ffaaaaaa"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/comment_icon"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dip"
+                    android:src="@drawable/icon_comment_n" />
+
+                <TextView
+                    android:id="@+id/comment_num"
+                    android:layout_width="20dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/comment_icon"
+                    android:layout_toRightOf="@id/comment_icon"
+                    android:gravity="bottom"
+                    android:text="5"
+                    android:textColor="#ff808080"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/nice_icon"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_toRightOf="@id/comment_num"
+                    android:src="@drawable/icon_hand_normal" />
+
+                <TextView
+                    android:id="@+id/nice_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/nice_icon"
+                    android:layout_toRightOf="@id/nice_icon"
+                    android:text="1445"
+                    android:textColor="#ff808080"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/topic_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:text="微软推特发中文感谢中国粉丝。哈哈哈哈"
+            android:textColor="#ff333333"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/topic_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:text="很多网站为了加强安全往往在密码以外增加安全问题。但是Google的深度研究表明，这一密码丢失后的最后一道防线要比预想的弱。"
+            android:textColor="#ff333333"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

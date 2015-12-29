@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="qinniu">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/funnymeet.android/libs/qinniu.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

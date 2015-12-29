@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/somain_title" />
+
+    <LinearLayout
+        android:id="@+id/nicknameandphotoframe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <LinearLayout
+            android:id="@+id/nicknameframe"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:addStatesFromChildren="true"
+            android:background="@drawable/login_edittext_long_style"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="昵称"
+                android:textColor="#ff808080"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/nickname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="例如：汤唯"
+                android:paddingLeft="50dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/register_headicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/signup_change_avatar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/countryandregionframe"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/finditemstyle"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/register_countryandregion_text"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="国家和地区"
+            android:textColor="#ff000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/register_countryandregion_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:text="中国"
+            android:textColor="@color/loginandregister_region_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#ffaaaaaa" />
+
+    <LinearLayout
+        android:id="@+id/regionnumandphonenumframe"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <EditText
+            android:id="@+id/reg_regioncode_edit"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_edittext_long_style"
+            android:editable="false"
+            android:gravity="center|left"
+            android:paddingLeft="20dp"
+            android:text="+86"
+            android:textColor="#ff000000"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/reg_regphone_frame"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/input_bar_bg_normal"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/reg_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="你的手机号码"
+                android:paddingLeft="20dp"
+                android:phoneNumber="true"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/reg_clear_regphone_button"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/abc_ic_clear_search_api_holo_light"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passwordframe"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:id="@+id/reg_password_title"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/input_bar_bg_normal"
+            android:gravity="left|center_vertical"
+            android:text="密码"
+            android:textColor="#ff000000"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/reg_password_frame"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/input_bar_bg_normal"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/reg_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="填写密码"
+                android:paddingLeft="20dp"
+                android:password="true"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/reg_showpassword_button"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/login_showpassword_icon"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/reg_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/green_btn_style"
+        android:gravity="center"
+        android:text="注册"
+        android:textColor="#ffffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/sohuodongprotocol"
+        android:textColor="#ffaaaaaa"
+        android:textSize="11sp" />
+
+</LinearLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/loginandregister_reg_phone.xml -->

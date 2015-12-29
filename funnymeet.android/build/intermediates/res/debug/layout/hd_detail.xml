@@ -1,0 +1,316 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/somain_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EEE9E9"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/topimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/p9"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="#80000000"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/hd_detail_favour_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:layout_marginRight="1dip"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#ffffffff"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:layout_marginRight="4dip"
+                        android:gravity="center"
+                        android:text="关注  /"
+                        android:textColor="#ffffffff"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:id="@+id/hd_detail_sign_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:layout_marginRight="1dip"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#ffffffff"
+                        android:textSize="12sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:layout_marginRight="10dip"
+                        android:gravity="center"
+                        android:text="参加"
+                        android:textColor="#ffffffff"
+                        android:textSize="12sp" />
+                    
+                    <ImageView
+                        android:id="@+id/likeicon"
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/huodong_notfocused"
+                        android:visibility="visible" />
+                    
+                    <ImageView
+                        android:id="@+id/hd_detail_joinicon"
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="20dip"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/huodong_notjoined"
+                        android:visibility="visible" />
+                    </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/hdbaseframe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/hdbaseinformation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:background="#ffffffff"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/hdname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="2014陈奕迅Eason&apos;s life演唱会深圳站"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:maxLines="1"
+                            android:text="开始时间:"
+                            android:textColor="#ff737373"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/hdstartdate"
+                            android:layout_width="70dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:maxLines="1"
+                            android:text="2014/7/31"
+                            android:textColor="#ff737373"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/hdstarttime"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="10dp"
+                            android:maxLines="1"
+                            android:text="09：32"
+                            android:textColor="#ff737373"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:maxLines="1"
+                            android:text="截止时间:"
+                            android:textColor="#ff737373"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/hdenddate"
+                            android:layout_width="70dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:maxLines="1"
+                            android:text="2014/7/3"
+                            android:textColor="#ff737373"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/hdendtime"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="10dp"
+                            android:maxLines="1"
+                            android:text="09：32"
+                            android:textColor="#ff737373"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <com.mtcent.funnymeet.ui.view.control.AutoGridView
+                        android:id="@+id/tagsgrid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:cacheColorHint="@android:color/transparent"
+                        android:fadingEdge="none"
+                        android:fadingEdgeLength="0dip"
+                        android:horizontalSpacing="5dp"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="3"
+                        android:overScrollMode="never"
+                        android:scrollbars="none"
+                        android:stretchMode="columnWidth"
+                        android:transcriptMode="disabled"
+                        android:verticalSpacing="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="15dp"
+                android:background="#ffcccccc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip" >
+
+                <ImageView
+                    android:layout_width="15dip"
+                    android:layout_height="15dip"
+                    android:layout_marginLeft="15dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/wallet_wxcredit_open_wait" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:text="活动时长"
+                    android:textColor="#ff808080"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/hd_detail_during"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="10小时"
+                    android:textColor="#ff808080"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="20dip"
+                android:background="#ffdee2e3" />
+
+            <include
+                layout="@layout/hd_detail_brief"
+                android:visibility="gone" />
+
+            <include
+                layout="@layout/hd_detail_fitpeople"
+                android:visibility="gone" />
+
+            <include
+                layout="@layout/hd_detail_addr"
+                android:visibility="visible" />
+
+            <include
+                layout="@layout/hd_detail_schedule"
+                android:visibility="gone" />
+
+            <!-- include
+                layout="@layout/hd_detail_actor"
+                android:visibility="gone" /-->
+
+            <include
+                layout="@layout/hd_detail_price"
+                android:visibility="gone" />
+
+            <include
+                layout="@layout/hd_detail_traffic"
+                android:visibility="gone" />
+
+            <include
+                layout="@layout/hd_detail_warning"
+                android:visibility="gone" />
+
+            <include
+                layout="@layout/hd_detail_map"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/takepartin"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/green_btn_rect_style"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="报名"
+        android:textColor="#ffffffff"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/hd_detail_toolsbar"
+        android:visibility="gone" />
+
+</LinearLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/hd_detail.xml -->

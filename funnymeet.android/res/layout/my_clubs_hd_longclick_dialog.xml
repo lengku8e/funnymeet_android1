@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/my_clubs_hd_dialog_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/forcedMaker_hd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="管理活动"
+                    android:textColor="#ff45c01a"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#ffaaaaaa" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/my_club_hd_longclick_modify"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:background="@drawable/finditemstyle"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="修改"
+                    android:textColor="#ff000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#ffaaaaaa" />
+
+                <TextView
+                    android:id="@+id/my_club_hd_longclick_pause"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:background="@drawable/finditemstyle"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="暂停"
+                    android:textColor="#ff000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#ffaaaaaa" />
+
+                <TextView
+                    android:id="@+id/my_club_hd_longclick_close"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:background="@drawable/finditemstyle"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="关闭"
+                    android:textColor="#ffff0000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

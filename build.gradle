@@ -1,0 +1,39 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {/*buildscript中仓库是gradle脚本自身需要的资源*/
+    /*构建过程依赖仓库*/
+    repositories {
+
+        jcenter()
+
+        mavenCentral()
+
+    }
+
+    dependencies {
+        /*下面声明的是gradle插件的版本*/
+        classpath 'com.android.tools.build:gradle:1.2.3'
+
+    }
+
+
+}
+
+/*配置整个项目的依赖仓库*/
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral();
+
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/releases'
+        }
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/snapshots'
+        }
+    }
+}
+
+
+
+
+

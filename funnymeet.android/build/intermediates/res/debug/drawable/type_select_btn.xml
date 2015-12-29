@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/type_select_btn_pressed" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/type_select_btn_pressed" android:state_focused="true"></item>
+    <item android:drawable="@drawable/type_select_btn_nor" android:state_enabled="true"></item>
+    <item android:drawable="@drawable/type_select_btn_nor"></item>
+
+</selector><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/drawable/type_select_btn.xml -->

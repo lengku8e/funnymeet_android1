@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="#ffffffff" />
+
+    <stroke
+        android:width="1px"
+        android:color="#ffe2e2e3" />
+
+    <corners
+        android:bottomLeftRadius="10px"
+        android:bottomRightRadius="10px"
+        android:topLeftRadius="10px"
+        android:topRightRadius="10px" />
+
+</shape><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/drawable/searchbar_shape.xml -->

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/locationdetailScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="bottom"
+                    android:paddingLeft="15dp"
+                    android:text="地点介绍"
+                    android:textColor="#ff303030"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/hdbriefcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.5"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="在此次公布的全阵容和演出时间表中，每个舞台每天的风格更加鲜明，也更有特色：反光镜强势加盟周五音乐节首日，让乐迷们无需热身直接进入噪翻音乐节的状态。为人低调，但是在广大年轻乐迷中积累了良好口碑的万能青年旅店也将把今年的西北首演带到银川。近年来人气极高的于湉将在周日下午，带来温暖阳光又活力十足的现场表演。"
+                    android:textColor="#ff404040"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/hdallcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dip"
+                    android:gravity="right|center_vertical"
+                    android:text="查看图文详情"
+                    android:textColor="#ff516a8f" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:gravity="bottom"
+                android:paddingLeft="15dp"
+                android:text="开放时间"
+                android:textColor="#ff303030"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/hdbaseframe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/hdbaseinformation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:maxLines="1"
+                            android:text="开始时间:"
+                            android:textColor="#ff404040"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/hdstartdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:maxLines="1"
+                            android:text="2014/7/3"
+                            android:textColor="#ff404040"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/hdstarttime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="10dp"
+                            android:maxLines="1"
+                            android:text="09：32"
+                            android:textColor="#ff404040"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:maxLines="1"
+                            android:text="截止时间:"
+                            android:textColor="#ff404040"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/hdenddate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:maxLines="1"
+                            android:text="2014/7/3"
+                            android:textColor="#ff404040"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/hdendtime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="10dp"
+                            android:maxLines="1"
+                            android:text="09：32"
+                            android:textColor="#ff404040"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:gravity="bottom"
+                android:paddingLeft="15dp"
+                android:text="当前开放状态"
+                android:textColor="#ff303030"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/fitpeoplerange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="2dp"
+                    android:text="部分区域开放"
+                    android:textColor="#ff404040"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:gravity="bottom"
+                android:paddingLeft="15dp"
+                android:text="联系电话"
+                android:textColor="#ff303030"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="2dp"
+                android:text="133 3333 3333"
+                android:textColor="#ff404040"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:gravity="bottom"
+                android:paddingLeft="15dp"
+                android:text="收费/免费"
+                android:textColor="#ff303030"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="2dp"
+                    android:text="免费开放"
+                    android:textColor="#ff404040"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="bottom"
+                    android:paddingLeft="15dp"
+                    android:text="交通指南"
+                    android:textColor="#ff303030"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/hdtraffic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.5"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:text="　作为一款为全球年轻消费者打造的欧洲知名啤酒品牌，乐堡啤酒一直积极赞助全球性的音乐文化活动，包括世界上规模最大的露天音乐节英国格拉斯顿伯里音乐节(Glastonbury)、罗斯基勒音乐节(Roskilde)、出口音乐节(EXIT)、无线音乐节(Wireless)和雷丁音乐节(Reading)等，旗下的乐堡绿放音乐节(GreenFest)更是深受欧洲年轻人的喜爱，乐堡啤酒已经成为国际音乐节文化中不可或缺的一部分。"
+                    android:textColor="#ff404040"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dip"
+                android:background="#ffdee2e3" />
+
+            <LinearLayout
+                android:id="@+id/hdallmap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/finditemstyle"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:text="地图"
+                    android:textColor="#ff303030"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/gotoright" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#ffdee2e3" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

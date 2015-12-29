@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/funnymeet.android/funnymeet.android.iml" filepath="$PROJECT_DIR$/funnymeet.android/funnymeet.android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/funnymeet.android.library/funnymeet.android.library.iml" filepath="$PROJECT_DIR$/funnymeet.android.library/funnymeet.android.library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/funnymeet_android.iml" filepath="$PROJECT_DIR$/funnymeet_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/funnymeet.android.library/library/library.iml" filepath="$PROJECT_DIR$/funnymeet.android.library/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewpagerlibrary/viewpagerlibrary.iml" filepath="$PROJECT_DIR$/viewpagerlibrary/viewpagerlibrary.iml" />
+    </modules>
+  </component>
+</project>

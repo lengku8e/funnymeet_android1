@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/humandetailScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="bottom"
+                    android:paddingLeft="10dp"
+                    android:text="人物简介"
+                    android:textColor="#ff303030"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hdbriefcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:text="马化腾，英文名Pony，网友都称小马哥。1971年10月29日出生于广东汕头地区（前汕头专区）潮南成田镇家美社区家一村。马化腾出身富裕，其父亲马陈术生于1940年，潮汕人，曾担任交通部海南八所港务局副局长，深圳市航运总公司总经理，深圳市盐田港集团有限公司副总经理等，1997年还曾为盐田港上市公司的董事，至退休。
+其母亲黄惠卿，在腾讯公司创立时曾拥有60%的股份，并很长时间担任深圳市腾讯计算机系统有限公司法人代表。虽然家庭富庶，但马化腾的创业资本更多是来自自己的积累。"
+                android:textColor="#ff404040"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="bottom"
+                        android:paddingLeft="10dp"
+                        android:text="职务/职称"
+                        android:textColor="#ff303030"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hdtraffic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="　腾讯主要创办人之一，现担任公司控股董事会主席兼首席执行官。"
+                android:textColor="#ff404040"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/find_human_detail_information.xml -->

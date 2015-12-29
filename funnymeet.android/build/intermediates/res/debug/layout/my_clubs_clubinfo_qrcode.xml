@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/somain_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.mtcent.funnymeet.ui.view.control.XVURLImageView
+            android:id="@+id/my_clubs_clubinfo_qrcode_clubicon"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_marginRight="20dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/defaultface" />
+
+        <TextView
+            android:id="@+id/my_clubs_clubinfo_qrcode_clubname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="活动·大连"
+            android:textColor="#ff000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/my_clubs_clubinfo_qrcode_clubicon"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/qrcode" />
+
+        <TextView
+            android:id="@+id/my_clubs_clubinfo_qrcode_clubname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:maxLines="1"
+            android:text="扫一扫上面的二维码图案,加入该俱乐部"
+            android:textColor="#ff808080"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/my_clubs_clubinfo_qrcode.xml -->

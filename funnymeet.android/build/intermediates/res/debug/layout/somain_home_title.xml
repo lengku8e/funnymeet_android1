@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#ff303538"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp" >
+
+    <TextView
+        android:id="@+id/hostcity"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_buttonstyle"
+        android:clickable="true"
+        android:drawableLeft="@drawable/place"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp"
+        android:text="大连市"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="#ffFFFFFF"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@drawable/fillet_backshare"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/search" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:enabled="false"
+            android:hint="输入活动主题或关键字"
+            android:singleLine="true"
+            android:textColor="#fff2f2f2"
+            android:textColorHint="#FFE0E0E0"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/suggest"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_buttonstyle"
+        android:clickable="true"
+        android:drawableLeft="@drawable/suggestions_write"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="3dp"
+        android:textColor="#fff2f2f2" />
+
+</LinearLayout><!-- From: file:/C:/xiangmu/funnymeet_android/funnymeet.android/res/layout/somain_home_title.xml -->

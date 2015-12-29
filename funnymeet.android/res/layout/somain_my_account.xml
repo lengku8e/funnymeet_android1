@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="horizontal" >
+
+    <com.mtcent.funnymeet.ui.view.control.XVURLImageView
+        android:id="@+id/my_faceImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/defaultface"
+        android:clickable="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/mahuateng" />
+
+    <LinearLayout
+        android:id="@+id/my_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/my_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:paddingLeft="10dip"
+            android:paddingTop="10dip"
+            android:text="昵称"
+            android:textSize="16sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/my_account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:paddingLeft="10dip"
+            android:text="用户号码：123456"
+            android:textColor="#ff808080"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

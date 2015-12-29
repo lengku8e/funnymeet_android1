@@ -1,0 +1,5 @@
+include ':funnymeet.android.library:library'
+include ':funnymeet.android'
+include ':viewpagerlibrary'
+/*
+这个文件是用来配置多模块的，比如你的项目有两个模块module-a,module-b,那么你就需要在这个文件中进行配置，格式如下：*/
