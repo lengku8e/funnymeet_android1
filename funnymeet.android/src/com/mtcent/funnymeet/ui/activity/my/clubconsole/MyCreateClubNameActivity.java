@@ -333,6 +333,8 @@ public class MyCreateClubNameActivity extends BaseActivity {
         task.addParam("name", clubName);// 页码
         task.addParam("type_id", club_type_id);
         task.addParam("type_name", club_type_name);
+        task.addParam("logo_url",iconUrl);
+        task.addParam("profile",clubName);
         task.addParam("logohash", imageFileHash);
         SOApplication.getDownLoadManager().startTask(task);
     }

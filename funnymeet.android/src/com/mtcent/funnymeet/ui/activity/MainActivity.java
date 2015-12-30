@@ -29,8 +29,8 @@ import android.widget.Toast;
 
 import com.mtcent.funnymeet.SOApplication;
 import com.mtcent.funnymeet.config.Constants;
-import com.mtcent.funnymeet.biz.service.CheckClubUpdateService;
-import com.mtcent.funnymeet.biz.service.UpdateVersionService;
+/*import com.mtcent.funnymeet.biz.service.CheckClubUpdateService;
+import com.mtcent.funnymeet.biz.service.UpdateVersionService;*/
 import com.mtcent.funnymeet.ui.activity.base.BaseActivity;
 import com.mtcent.funnymeet.ui.view.control.FunnymeetAddressBookView;
 import com.mtcent.funnymeet.ui.activity.club.FindNewClubActivity;

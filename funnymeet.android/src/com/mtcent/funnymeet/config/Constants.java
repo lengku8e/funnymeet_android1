@@ -27,9 +27,9 @@ public final class Constants {
     /*
     开发环境连接配置
      */
-    public static String SERVER_HOST_IP = "localhost:8080";
-    public static String SERVER_HOST_OPEN = "localhost:8080";
-    public static String SERVICE_HOST = "http://localhost:8080/api.htm";
+    public static String SERVER_HOST_IP = "192.168.1.104:8080";
+    public static String SERVER_HOST_OPEN = "192.168.1.104:8080";
+    public static String SERVICE_HOST = "http://192.168.1.104:8080/api.htm";
 /*    public static String SERVER_INVITE_LINK = "http://file.dev.mtcent.com/open/m/v.html?openHost=http://" + SERVER_HOST_OPEN + "&clubId=";
     public static String APP_DOWNLOADPATH = "http://file.dev.mtcent.com/app/android/";*/
     /**

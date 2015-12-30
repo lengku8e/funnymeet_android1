@@ -362,7 +362,7 @@ public class DefaultLoginActivity extends Activity implements DownBack {
 				}
 			}
 
-			if (succ && user != null && user.has("mobilePhone")) {
+			if (succ && user != null && user.has("mobile")) {
 				UserMangerHelper.saveDefaultUser(user);
 				StrUtil.showMsg(this, "登录成功");
 				setResult(RESULT_FIRST_USER);

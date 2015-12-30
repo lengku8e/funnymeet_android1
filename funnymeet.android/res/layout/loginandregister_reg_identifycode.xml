@@ -140,6 +140,17 @@
         android:textColor="#ffaaaaaa"
         android:textSize="14sp" />
 
+    <Button
+        android:id="@+id/reg_huoquauthcode"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="huoqucode"
+        android:background="@drawable/green_btn_disable"
+        android:text="显示验证码"
+        android:textColor="#ffffffff"
+        android:textSize="16sp"/>
     <TextView
         android:id="@+id/reg_nextstep"
         android:layout_width="match_parent"

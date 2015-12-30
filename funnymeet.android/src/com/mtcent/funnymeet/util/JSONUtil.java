@@ -75,8 +75,8 @@ public class JSONUtil {
                         HTTP.UTF_8));
             } else {
                 System.out.println("运行到:paramjstr为空");
-                httpPost.addHeader("Content-Type",
-                        "application/x-www-form-urlencoded");
+                httpPost.setHeader("Content-Type",
+                        "application/x-www-form-urlencoded;charset=utf-8");
                 params.add(new BasicNameValuePair("infot", String.valueOf(time)));
                 HttpEntity entity = new UrlEncodedFormEntity(
                         createNetParam(params), HTTP.UTF_8);

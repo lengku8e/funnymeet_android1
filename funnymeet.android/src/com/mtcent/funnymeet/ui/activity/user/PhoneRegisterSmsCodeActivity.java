@@ -1,6 +1,8 @@
 package com.mtcent.funnymeet.ui.activity.user;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -8,8 +10,10 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.mtcent.funnymeet.SOApplication;
 import com.mtcent.funnymeet.config.Constants;
@@ -38,13 +42,17 @@ public class PhoneRegisterSmsCodeActivity extends Activity implements DownBack {
 	JSONObject userJson;
 	String phone;
 	MyCountTimer countTimer;
+    String authCode;
+	private Button reg_huoquauthcod;
 
 	void doIntent(Intent intent) {
 		try {
 			if (intent != null) {
 				String userStr = intent.getStringExtra("user");
 				userJson = new JSONObject(userStr);
-				phone = userJson.optString("mobilePhone");
+				phone = userJson.optString("mobile");
+				authCode = userJson.optString("authCode");
+
 			}
 		} catch (JSONException e) {
 			finish();
@@ -63,6 +71,7 @@ public class PhoneRegisterSmsCodeActivity extends Activity implements DownBack {
 			// onFinish()中的代码是计时器结束的时候要做的事情
 			reg_problems.setText("收不到验证码?");
 			reg_problems.setTextColor(0xff516a8f);
+
 		}
 
 		@Override
@@ -78,10 +87,27 @@ public class PhoneRegisterSmsCodeActivity extends Activity implements DownBack {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		this.setContentView(R.layout.loginandregister_reg_identifycode);
+
+
 		doIntent(getIntent());
+
+
+
 		init();
 	}
+/*
+public void huoqucode(View v){
 
+	AlertDialog.Builder builder  = new AlertDialog.Builder(PhoneRegisterSmsCodeActivity.this);
+	builder.setTitle("验证码").setMessage(authCode).setPositiveButton("确定", new DialogInterface.OnClickListener() {
+		@Override
+		public void onClick(DialogInterface dialogInterface, int i) {
+			Toast.makeText(PhoneRegisterSmsCodeActivity.this,authCode,Toast.LENGTH_SHORT).show();
+		}
+	});
+
+
+}*/
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		// TODO Auto-generated method stub
@@ -118,7 +144,27 @@ public class PhoneRegisterSmsCodeActivity extends Activity implements DownBack {
 			reg_show_phone_prefour.setText(phone.substring(3, 7));
 			reg_show_phone_postfour.setText(phone.substring(7));
 		}
+
 		reg_nextstep = (TextView) findViewById(R.id.reg_nextstep);
+		reg_huoquauthcod = (Button)findViewById(R.id.reg_huoquauthcode);
+
+/*
+		reg_huoquauthcod.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View view) {
+
+				Toast.makeText(PhoneRegisterSmsCodeActivity.this,authCode,Toast.LENGTH_SHORT).show();
+
+			}
+		});*/
+
+
+
+
+
+
+
+
 		reg_smsidentifycode = (EditText) findViewById(R.id.reg_smsidentifycode);
 		reg_nextstep.setOnClickListener(new View.OnClickListener() {
 
@@ -139,6 +185,7 @@ public class PhoneRegisterSmsCodeActivity extends Activity implements DownBack {
 
 			}
 		});
+
 		reg_smsidentifycode.addTextChangedListener(new TextWatcher() {
 
 			@Override
@@ -162,6 +209,7 @@ public class PhoneRegisterSmsCodeActivity extends Activity implements DownBack {
 					reg_nextstep
 							.setBackgroundResource(R.drawable.green_btn_style);
 				} else {
+
 					reg_nextstep
 							.setBackgroundResource(R.drawable.green_btn_disable);
 				}
@@ -169,6 +217,16 @@ public class PhoneRegisterSmsCodeActivity extends Activity implements DownBack {
 		});
 	}
 
+	public void huoqucode(View v) {
+
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setTitle("验证码").setMessage(authCode).setPositiveButton("确定", new DialogInterface.OnClickListener() {
+			@Override
+			public void onClick(DialogInterface dialogInterface, int i) {
+				Toast.makeText(PhoneRegisterSmsCodeActivity.this, authCode, Toast.LENGTH_SHORT).show();
+			}
+		}).create().show();
+	}
 	CustomDialog waitDialog;
 
 	void sendAuth(String auth) {
@@ -204,7 +262,7 @@ public class PhoneRegisterSmsCodeActivity extends Activity implements DownBack {
 				}
 			}
 
-			if (succ && user != null && user.has("mobilePhone")) {
+			if (succ && user != null && user.has("mobile")) {
 				UserMangerHelper.saveDefaultUser(user);
 				StrUtil.showMsg(this, "注册成功");
 				setResult(RESULT_FIRST_USER);

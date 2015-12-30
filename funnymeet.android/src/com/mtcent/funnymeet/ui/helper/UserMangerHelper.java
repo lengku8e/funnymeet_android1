@@ -104,7 +104,7 @@ public class UserMangerHelper {
 	}
 
 	public static String getDefaultUserPhone() {
-		return getDefaultUser().optString("mobilePhone", null);
+		return getDefaultUser().optString("mobile", null);
 	}
 
 	public static String getDefaultUserGuid() {

@@ -201,7 +201,7 @@ public class FunnymeetMyView extends FunnymeetBaseView {
 				}
 			}
 
-			if (succ && user != null && user.has("mobilePhone")) {
+			if (succ && user != null && user.has("mobile")) {
 				this.user = user;
 				UserMangerHelper.saveDefaultUser(user);
 				resetView();

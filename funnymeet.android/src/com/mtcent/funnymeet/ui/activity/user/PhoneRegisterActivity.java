@@ -493,11 +493,12 @@ public class PhoneRegisterActivity extends Activity implements DownBack {
 				}
 			}
 
-			if (isSucceed && user != null && user.has("mobilePhone")) {
+			if (isSucceed && user != null && user.has("mobile")) {
 				Intent intent = new Intent();
 				intent.setClass(PhoneRegisterActivity.this,
 						PhoneRegisterSmsCodeActivity.class);
 				intent.putExtra("user", user.toString());
+				System.out.println("如果注册成功提交了反回来的user"+user.toString());
 				startActivityForResult(intent, 556);
 			} else {
 				StrUtil.showMsg(this, msg);
